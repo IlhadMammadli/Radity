@@ -102,4 +102,8 @@ class ImageTextField: BaseView {
         textField.placeholder = placeholder
     }
     
+    func setTest() {
+         
+    }
+    
 }

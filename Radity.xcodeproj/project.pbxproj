@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		DFA2C72A27CFF291006A2EE9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA2C72927CFF291006A2EE9 /* AppDelegate.swift */; };
 		DFA2C72C27CFF291006A2EE9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA2C72B27CFF291006A2EE9 /* SceneDelegate.swift */; };
-		DFA2C72E27CFF291006A2EE9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA2C72D27CFF291006A2EE9 /* ViewController.swift */; };
-		DFA2C73127CFF291006A2EE9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFA2C72F27CFF291006A2EE9 /* Main.storyboard */; };
 		DFA2C73327CFF293006A2EE9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DFA2C73227CFF293006A2EE9 /* Assets.xcassets */; };
 		DFA2C73627CFF293006A2EE9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFA2C73427CFF293006A2EE9 /* LaunchScreen.storyboard */; };
+		DFA2C74727CFF37F006A2EE9 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA2C74627CFF37F006A2EE9 /* LoginViewController.swift */; };
+		DFA2C74927CFF3D3006A2EE9 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA2C74827CFF3D3006A2EE9 /* CustomTextField.swift */; };
+		DFA2C74C27CFF5A9006A2EE9 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA2C74B27CFF5A9006A2EE9 /* BaseView.swift */; };
+		DFA2C74E27D0CA82006A2EE9 /* NSLayoutExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA2C74D27D0CA82006A2EE9 /* NSLayoutExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DFA2C72627CFF291006A2EE9 /* Radity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Radity.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFA2C72927CFF291006A2EE9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DFA2C72B27CFF291006A2EE9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DFA2C72D27CFF291006A2EE9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		DFA2C73027CFF291006A2EE9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DFA2C73227CFF293006A2EE9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DFA2C73527CFF293006A2EE9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DFA2C73727CFF293006A2EE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DFA2C74627CFF37F006A2EE9 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		DFA2C74827CFF3D3006A2EE9 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		DFA2C74B27CFF5A9006A2EE9 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		DFA2C74D27D0CA82006A2EE9 /* NSLayoutExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSLayoutExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,97 @@
 		DFA2C72827CFF291006A2EE9 /* Radity */ = {
 			isa = PBXGroup;
 			children = (
-				DFA2C72927CFF291006A2EE9 /* AppDelegate.swift */,
-				DFA2C72B27CFF291006A2EE9 /* SceneDelegate.swift */,
-				DFA2C72D27CFF291006A2EE9 /* ViewController.swift */,
-				DFA2C72F27CFF291006A2EE9 /* Main.storyboard */,
-				DFA2C73227CFF293006A2EE9 /* Assets.xcassets */,
-				DFA2C73427CFF293006A2EE9 /* LaunchScreen.storyboard */,
+				DFA2C74A27CFF545006A2EE9 /* Extensions */,
+				DFA2C74027CFF2DD006A2EE9 /* Supporting Files */,
+				DFA2C73F27CFF2AF006A2EE9 /* App */,
+				DFA2C73E27CFF2A4006A2EE9 /* Scene */,
+				DFA2C73D27CFF29A006A2EE9 /* Common */,
 				DFA2C73727CFF293006A2EE9 /* Info.plist */,
 			);
 			path = Radity;
+			sourceTree = "<group>";
+		};
+		DFA2C73D27CFF29A006A2EE9 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				DFA2C74827CFF3D3006A2EE9 /* CustomTextField.swift */,
+				DFA2C74B27CFF5A9006A2EE9 /* BaseView.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		DFA2C73E27CFF2A4006A2EE9 /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				DFA2C74527CFF31F006A2EE9 /* Register */,
+				DFA2C74127CFF2F3006A2EE9 /* Login */,
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
+		DFA2C73F27CFF2AF006A2EE9 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				DFA2C72927CFF291006A2EE9 /* AppDelegate.swift */,
+				DFA2C72B27CFF291006A2EE9 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		DFA2C74027CFF2DD006A2EE9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DFA2C73427CFF293006A2EE9 /* LaunchScreen.storyboard */,
+				DFA2C73227CFF293006A2EE9 /* Assets.xcassets */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DFA2C74127CFF2F3006A2EE9 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				DFA2C74427CFF317006A2EE9 /* Model */,
+				DFA2C74327CFF312006A2EE9 /* View */,
+				DFA2C74227CFF2FA006A2EE9 /* View Model */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		DFA2C74227CFF2FA006A2EE9 /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
+		DFA2C74327CFF312006A2EE9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DFA2C74627CFF37F006A2EE9 /* LoginViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DFA2C74427CFF317006A2EE9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DFA2C74527CFF31F006A2EE9 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		DFA2C74A27CFF545006A2EE9 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				DFA2C74D27D0CA82006A2EE9 /* NSLayoutExtension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +213,6 @@
 			files = (
 				DFA2C73627CFF293006A2EE9 /* LaunchScreen.storyboard in Resources */,
 				DFA2C73327CFF293006A2EE9 /* Assets.xcassets in Resources */,
-				DFA2C73127CFF291006A2EE9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,7 +223,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DFA2C72E27CFF291006A2EE9 /* ViewController.swift in Sources */,
+				DFA2C74927CFF3D3006A2EE9 /* CustomTextField.swift in Sources */,
+				DFA2C74E27D0CA82006A2EE9 /* NSLayoutExtension.swift in Sources */,
+				DFA2C74727CFF37F006A2EE9 /* LoginViewController.swift in Sources */,
+				DFA2C74C27CFF5A9006A2EE9 /* BaseView.swift in Sources */,
 				DFA2C72A27CFF291006A2EE9 /* AppDelegate.swift in Sources */,
 				DFA2C72C27CFF291006A2EE9 /* SceneDelegate.swift in Sources */,
 			);
@@ -147,14 +235,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		DFA2C72F27CFF291006A2EE9 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DFA2C73027CFF291006A2EE9 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		DFA2C73427CFF293006A2EE9 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -294,7 +374,6 @@
 				INFOPLIST_FILE = Radity/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -322,7 +401,6 @@
 				INFOPLIST_FILE = Radity/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
